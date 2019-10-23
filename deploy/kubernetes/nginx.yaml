@@ -2,6 +2,8 @@ apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
   name: nginx
+  annotations:
+      flux.weave.works/automated: 'true'
 spec:
   replicas: 5
   template:
